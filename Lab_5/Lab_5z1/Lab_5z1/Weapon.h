@@ -1,32 +1,41 @@
 #pragma once
 #include <iostream>
 using namespace std;
+enum class WeaponTypes {
+    ONEHAND,
+    TWOHAND,
+    BOW,
+    CROSSBOW,
+};
 class Weapon
 {
     string name;
     float weight;
     float damage;
     float maxWeight;
-    friend class Characteristic;
+    WeaponTypes s;
 public:
     Weapon();
 
     Weapon(string name, float weight, float damage, float maxWeight);
-
-    ~Weapon();
 
     string getName();
     float getWeight();
     float getDamage();
     float getMaxWeight();
 
+    WeaponTypes gets();
+    ~Weapon();
+
     void setDamage(float damage);
 
 
     float getmaxW();
 
-    float applyWeapon(float weight);
+    float applyWeapon(Weapon* q);
 
-    float applyWeapon();
+    float applyWeapon(float weight);
+    
+
 };
 

@@ -5,11 +5,10 @@ Weapon::Weapon()
 	this->name = name;
 	this->weight = weight;
 	this->damage = damage;
-	this->maxWeight = maxWeight;
+	this->s = s;
 }
 
 Weapon::Weapon(string name, float weight, float damage, float maxWeight) :name(name), weight(weight), damage(damage), maxWeight(maxWeight) {}
-
 
 string Weapon::getName()
 {
@@ -40,9 +39,13 @@ void Weapon::setDamage(float damage)
 };
 
 
+WeaponTypes Weapon::gets()
+{
+	return this->s;
+}
+
 Weapon::~Weapon()
 {
-	cout << " Объект " << name << " уничтожается" << endl;
 };
 
 float Weapon::getmaxW()
@@ -55,12 +58,12 @@ float Weapon::getmaxW()
 	}
 }
 
+float Weapon::applyWeapon(Weapon* q)
+{
+	return (q->weight + weight);;
+}
+
 float Weapon::applyWeapon(float weight)
 {
 	return (this->weight + weight);
-}
-
-float Weapon::applyWeapon()
-{
-	return applyWeapon(9);
 }

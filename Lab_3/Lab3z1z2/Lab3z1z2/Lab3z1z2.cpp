@@ -20,12 +20,12 @@ int printArray(int* begin, int* end) {
     return sum;
 }
 
-int fun(char a, int x, int y)
+void (*fun(char bn))
 {
-    if (a == '+')
-        return sum(x, y);
-    if (a == '-')
-        return sub(x, y);
+    if (bn == '+')
+        return sum;
+    if (bn == '-')
+        return sub;
 }
 
 
@@ -60,11 +60,11 @@ int main()
     int* end = std::end(A);
     cout << "Сумма элементов массива  = ";
     cout << printArray(begin, end) << endl;
-    cout << fun('+', 129, 5) << endl;
+    cout << "Если значение bn совпадаетс с + : " << fun('+') << endl;
 
 
     float* pc1 = new float(314.21);
-    cout << *pc1 << endl;;
+    cout << *pc1 << endl;
     delete pc1;
 
 
