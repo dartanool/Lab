@@ -20,7 +20,7 @@ int printArray(int* begin, int* end) {
     return sum;
 }
 
-void (*fun(char bn))
+int (*fun(char bn))(int,int)
 {
     if (bn == '+')
         return sum;
@@ -41,6 +41,7 @@ int main()
     *b += 2;
     cout << " Измененное значение Указателя = " << *b << endl;
     cout << "a = " << a << endl;
+
     int Arr[] = { 1,2,3,4 };
     for (int i = 0; i < 4; i++) {
 
@@ -60,7 +61,11 @@ int main()
     int* end = std::end(A);
     cout << "Сумма элементов массива  = ";
     cout << printArray(begin, end) << endl;
-    cout << "Если значение bn совпадаетс с + : " << fun('+') << endl;
+    
+    int p = 1;
+    int o = 2;
+    int po = fun('+')(p, o);
+    cout  << po << endl;
 
 
     float* pc1 = new float(314.21);
