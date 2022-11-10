@@ -3,11 +3,14 @@
 class MagicWeapon :
     public Weapon
 {
-    float dopDamage;
+    int dopDamage;
 public:
     MagicWeapon();
-    MagicWeapon(float dopDamage);
-    float getDopDamage();
+    MagicWeapon(string name, int weight, int damage, int maxWeight, WeaponTypes s, int dopDamage);
+    int getDopDamage();
+
+    int VDamage() override ;
+
 
 };
 

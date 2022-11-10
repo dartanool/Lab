@@ -8,30 +8,30 @@ Weapon::Weapon()
 	this->s = s;
 }
 
-Weapon::Weapon(string name, float weight, float damage, float maxWeight) :name(name), weight(weight), damage(damage), maxWeight(maxWeight) {}
+Weapon::Weapon(string name, int weight, int damage, int maxWeight, WeaponTypes s) :name(name), weight(weight), damage(damage), maxWeight(maxWeight), s(s) {}
 
 string Weapon::getName()
 {
 	return this->name;
 };
 
-float Weapon::getWeight()
+int Weapon::getWeight()
 {
 	return this->weight;
 };
 
-float Weapon::getDamage()
+int Weapon::getDamage()
 {
 	return this->damage;
 };
 
-float Weapon::getMaxWeight()
+int Weapon::getMaxWeight()
 {
 	return this->maxWeight;
 };
 
 
-void Weapon::setDamage(float damage)
+void Weapon::setDamage(int damage)
 {
 	if (damage > this->damage) this->damage = this->damage;
 	else if (damage < 0) cout << "Вы ввели отрицательное число!" << endl;
@@ -41,14 +41,14 @@ void Weapon::setDamage(float damage)
 
 WeaponTypes Weapon::gets()
 {
-	return this->s;
+	return this->s=s;
 }
 
 Weapon::~Weapon()
 {
 };
 
-float Weapon::getmaxW()
+int Weapon::getmaxW()
 {
 	if (maxWeight < weight) {
 		return true;
@@ -58,12 +58,19 @@ float Weapon::getmaxW()
 	}
 }
 
-float Weapon::applyWeapon(Weapon* q)
+int Weapon::applyWeapon(Weapon* q)
 {
 	return (q->weight + weight);;
 }
 
-float Weapon::applyWeapon(float weight)
+int Weapon::applyWeapon(int weight)
 {
 	return (this->weight + weight);
+}
+int Weapon::VDamage()
+{
+	return this->damage;
+}
+void Item::printItem() {
+	cout << "id: " << ID << endl << "login: " << login << endl << "password: " << password << endl;
 }

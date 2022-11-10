@@ -2,39 +2,51 @@
 #include <iostream>
 using namespace std;
 enum class WeaponTypes {
-    ONEHAND,
-    TWOHAND,
+    ONEHANDED,
+    TWOHANDED,
     BOW,
     CROSSBOW,
 };
+
+struct Item {
+    int ID;
+    string login;
+    int password;
+
+    void printItem();
+};
+
 class Weapon
 {
+ protected:
     string name;
-    float weight;
-    float damage;
-    float maxWeight;
+    int weight;
+    int damage;
+    int maxWeight;
     WeaponTypes s;
 public:
     Weapon();
 
-    Weapon(string name, float weight, float damage, float maxWeight);
+    Weapon(string name, int weight, int damage, int maxWeight, WeaponTypes s);
 
     string getName();
-    float getWeight();
-    float getDamage();
-    float getMaxWeight();
+    int getWeight();
+    int getDamage();
+    int getMaxWeight();
 
     WeaponTypes gets();
     ~Weapon();
 
-    void setDamage(float damage);
+    void setDamage(int damage);
 
 
-    float getmaxW();
+    int getmaxW();
 
-    float applyWeapon(Weapon* q);
+    int applyWeapon(Weapon* q);
 
-    float applyWeapon(float weight);
+    int applyWeapon(int weight);
+
+    virtual int VDamage();
     
 
 };
