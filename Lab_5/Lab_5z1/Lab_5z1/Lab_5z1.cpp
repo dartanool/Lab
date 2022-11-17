@@ -3,7 +3,7 @@
 #include "MagicWeapon.h"
 using namespace std;
 
-
+/*
 bool operator > (Weapon a, Weapon b);
 bool operator > (Weapon a, Weapon b);
 
@@ -15,10 +15,12 @@ bool operator < (Weapon a, Weapon b)
 {
 	return a.getDamage() < b.getDamage();
 }
+*/
 
 int main()
 {
 	setlocale(LC_ALL,"");
+	/*
 	WeaponTypes q = WeaponTypes::ONEHANDED;
 	if (q == WeaponTypes::ONEHANDED)
 	cout << " Одноручное оружие " << endl;
@@ -37,6 +39,13 @@ int main()
 	Weapon Weap2("Nakonechnik", 7, 4, 2, WeaponTypes::ONEHANDED);
 	cout <<(Weap1 > Weap2) << endl;
 	cout <<(Weap1 < Weap2) << endl;
+	*/
+	MagicWeapon po(" Strela", 1, 2, 3, WeaponTypes::ONEHANDED,5);
+	MagicWeapon lo(" Nakonechnik", 7, 4, 2, WeaponTypes::ONEHANDED,6);
+	po.attack();
+	lo.attack();
+
+
 
 }
 

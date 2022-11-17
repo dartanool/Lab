@@ -48,6 +48,7 @@ public:
 
     virtual int VDamage();
     
+    virtual void attack() = 0;
 
 };
 

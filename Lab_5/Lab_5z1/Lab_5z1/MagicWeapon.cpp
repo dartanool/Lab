@@ -10,6 +10,10 @@ int MagicWeapon::getDopDamage()
 {
 	return dopDamage;
 }
+void MagicWeapon::attack()
+{
+	cout << "Атакуем магическим оружием" <<this->name<< endl;
+}
 int MagicWeapon::VDamage()
 {
 	return Weapon::getDamage() + dopDamage;

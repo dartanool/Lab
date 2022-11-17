@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{07e6f531-af3f-4cfb-95ea-262e127874dd}</ProjectGuid>
-    <RootNamespace>Lab5z1</RootNamespace>
+    <ProjectGuid>{d20a687d-308c-49d2-9d47-dfe4a742178a}</ProjectGuid>
+    <RootNamespace>Lab6z1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,15 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DisposableWeapon.cpp" />
-    <ClCompile Include="Lab_5z1.cpp" />
-    <ClCompile Include="MagicWeapon.cpp" />
-    <ClCompile Include="Weapon.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="DisposableWeapon.h" />
-    <ClInclude Include="MagicWeapon.h" />
-    <ClInclude Include="Weapon.h" />
+    <ClCompile Include="Lab6z1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
