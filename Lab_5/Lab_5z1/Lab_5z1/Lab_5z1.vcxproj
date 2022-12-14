@@ -142,11 +142,13 @@
     <ClCompile Include="DisposableWeapon.cpp" />
     <ClCompile Include="Lab_5z1.cpp" />
     <ClCompile Include="MagicWeapon.cpp" />
+    <ClCompile Include="Shablon.cpp" />
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DisposableWeapon.h" />
     <ClInclude Include="MagicWeapon.h" />
+    <ClInclude Include="Shablon.h" />
     <ClInclude Include="Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -51,6 +51,8 @@ int main()
 	wer.attack();
 	wer.attack();
 
+	Shablon<MagicWeapon> shablonMagicWeapon(po);
+	Shablon<DisposableWeapon> shablonDisposableWeapon(lo);
 
 }
 
